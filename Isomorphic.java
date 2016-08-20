@@ -45,15 +45,6 @@ class Isomorphic
 					f++;
 				}
 			}
-
-			/*for(int i=0;i<a.length;i++)
-			{
-				if(a[i]==a1[i])
-				{
-					f++;
-				}
-
-			}*/
 			if(f==a.length)
 			{
 				System.out.println("true");
