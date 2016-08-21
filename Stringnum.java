@@ -19,10 +19,18 @@ public class Stringnum {
 					if(i==s.length()-1)
 						break;
 				}
+			if(sum>=1 && sum<=99)
+				{
 				while(sum>=1)
 				{
 					System.out.print(a);
 					sum--;
+				}
+				}
+				else
+				{
+					System.out.println("Invalid Number");
+					break;
 				}
 			}
 			else
