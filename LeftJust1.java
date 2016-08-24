@@ -1,3 +1,4 @@
+package first;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -11,20 +12,14 @@ class justifyy
 	StringBuffer s=new StringBuffer();
 String last=" ";
 	int n=0;
+	if(l>0)
+	{
 		for(String p:lin.split( ","))
 		{
-		/*	for(int i=0;i<str.length();i++)
-			{
-				if(str.charAt(i)=='\'')
-				{
-					str.deleteCharAt(i);
-					i=-1;
-				}
-			}*/
 			int n1=0;
 			for(int i=0;i<p.length();i++)
 			{
-				if((p.charAt(i)>=97)&&(p.charAt(i)<=122))
+				if(Character.isAlphabetic(p.charAt(i)))
 				{	n1++;
 				}
 			}
@@ -79,11 +74,16 @@ String last=" ";
 			System.out.println(it.next());
 		}
 	}
+	else if(l<=0)
+	{
+		System.out.println("enter l value greater than one");
+	}
+	}
 }
 
 
 
-public class LeftJust1 {
+public class leftjust1 {
 	public static void main(String [] args)
 	{
 	Scanner sc=new Scanner(System.in);
