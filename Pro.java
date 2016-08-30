@@ -5,7 +5,7 @@ import java.lang.*;
 import java.io.*;
 
 /* Name of the class has to be "Main" only if the class is public. */
-class Pro
+class Ideone
 {
 	public static void main (String[] args) throws java.lang.Exception
 	{
@@ -19,14 +19,22 @@ class Pro
 		char[]a=s.toCharArray();
 		Arrays.sort(a);
 		s=String.valueOf(a);
+		System.out.println(s);
+		
 		int output=0;
 		if(n>1)
-		 output=Integer.parseInt(s.substring(0,s.length()-k));
+		{
+			if(s.charAt(0)=='0')
+			s=s.charAt(1)+""+s.charAt(0)+""+s.substring(2,s.length());
+			
+			output=Integer.parseInt(s.substring(0,s.length()-k));
+		}
 		else
 		{
 			int j=s.length()-1;
 			String ss=new String();
-			for(int i=1;i<=k;i++)
+				System.out.println("i "+s.length());
+			for(int i=1;i<=((s.length()-1)-k);i++)
 			{
 				
 			 ss=ss+s.charAt(j)+"";
