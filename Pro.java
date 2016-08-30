@@ -22,6 +22,8 @@ class Ideone
 		System.out.println(s);
 		
 		int output=0;
+		if(k<s.length())
+		{
 		if(n>1)
 		{
 			if(s.charAt(0)=='0')
@@ -43,6 +45,6 @@ class Ideone
 			output=-Integer.parseInt(ss);
 		}
 		System.out.println("least num "+output);
-
+		}
 	}
 }
